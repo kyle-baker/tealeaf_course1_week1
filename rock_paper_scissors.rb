@@ -22,6 +22,7 @@ loop do
   puts "Your input was #{CHOICES[user_choice]} and I went with #{CHOICES[computer_choice]}."
   sleep 1
 
+# Possibl out
   if user_choice == computer_choice
     puts "Blast! We both chose the same thing. It's a draw."
   elsif user_choice == 'P' && computer_choice == 'R'
