@@ -26,6 +26,7 @@ or else
 
 # Defining Methods
 loop do
+
   def initialize_board
     board = {}
     (1..9).each {|position| board[position] = ' '}
@@ -91,7 +92,7 @@ loop do
   end until winner || all_positions_filled?(board)
 
   if winner
-   announce_winner(winner)
+    announce_winner(winner)
   else
     puts "It's a tie"
   end
